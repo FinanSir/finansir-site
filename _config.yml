@@ -1,7 +1,7 @@
 # Site settings
 title: FinanSir
 email: hello@finansirapp.com
-description: "FinanSir, your personal finance butler."
+description: "Your personal finance butler."
 
 baseurl: ""
 url: "http://finansirapp.com"

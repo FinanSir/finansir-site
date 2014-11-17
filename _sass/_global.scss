@@ -1,1 +1,91 @@
+/*
+ * Text colors
+ */
+$primary-text-color: #555;
+$secondary-text-color: #888;
 
+/*
+ * Element colors
+ */
+$offwhite: #F5F5F5;
+
+/*
+ * Shadows
+ */
+$header-shadow: 0 1px 5px rgba(black,0.1);
+$footer-shadow: 0 -1px 5px rgba(black,0.1);
+$row-shadow:
+  inset 0 2px 5px rgba(black, 0.1),
+  inset 0 -2px 5px rgba(black, 0.1);
+
+
+html > body {
+  color: $primary-text-color;
+}
+
+
+.site-header {
+  background-color: white;
+}
+.site-header > .navbar {
+  @extend .navbar-default;
+  
+  margin-bottom: 10px;
+  
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: $header-shadow;
+}
+.navbar-nav > .active > a {
+  background-color: $offwhite;
+}
+
+
+/*
+ * Rows that span the entire site width
+ */
+.full-row:first-child {
+  margin-top: 0;
+}
+.full-row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+  box-shadow: $row-shadow;
+  background-color: rgba(white, 0.9);
+}
+.full-row > .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  h1 {    
+    margin-top: 100px;
+    
+    color: $secondary-text-color;
+  }
+}
+.full-row .image-content {
+  @extend .col-sm-4;
+}
+.full-row .image-content figure img {
+  @media (min-width: $screen-sm-min) {
+    max-height: 600px;
+  }
+}
+.full-row .text-content {
+  @extend .col-sm-6;
+  
+  @media (min-width: $screen-sm-min) {
+    float: right;
+  }
+}
+
+
+.site-footer {
+  color: $secondary-text-color;
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  box-shadow: $footer-shadow;
+}

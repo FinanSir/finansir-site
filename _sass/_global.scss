@@ -89,3 +89,19 @@ html > body {
   background-color: white;
   box-shadow: $footer-shadow;
 }
+.site-footer ul.site-links {
+  list-style: none;
+  
+  li {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  li a {
+    color: $secondary-text-color;
+    
+    &:hover, &:active {
+      text-decoration: none;
+    }
+  } 
+}

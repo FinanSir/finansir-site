@@ -67,6 +67,13 @@ html > body {
 .full-row .image-content {
   @extend .col-sm-4;
 }
+.full-row .image-content figure {
+  overflow: hidden;
+  
+  @media (max-width: $screen-sm-min - 1) {
+    max-height: 300px;
+  }
+}
 .full-row .image-content figure img {
   @media (min-width: $screen-sm-min) {
     max-height: 600px;
